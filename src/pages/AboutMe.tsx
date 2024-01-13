@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './NavBar';
 import GraduationImage from '../photos/graduation.jpg'; 
+import Footer from './Footer';
 
 const AboutMe: React.FC = () => {
     return (
@@ -40,6 +41,7 @@ const AboutMe: React.FC = () => {
                 </div>
             </div>
         </div>
+        <Footer/>
     </>
     );
 };

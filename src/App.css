@@ -195,6 +195,9 @@ p {
 /* Footer.css */
 .footer {
   /* Add your styles here */
+  display: flex; /* Aligns children in a row */
+  justify-content: center; /* Centers the items horizontally */
+  gap: 10px; 
   text-align: center;
   padding: 20px;
   background-color: #1a1a1a;

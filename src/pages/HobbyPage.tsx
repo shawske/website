@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './NavBar';
 import Golf from '../photos/golf.jpg'; 
 import Hockey from '../photos/hockey.jpg'
+import Footer from './Footer';
 
 const HobbyPage: React.FC = () => {
     return (
@@ -38,6 +39,7 @@ const HobbyPage: React.FC = () => {
                 </div>
             </div>
         </div>
+        <Footer/>
     </>
     );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './NavBar';
 import { Link } from 'react-router-dom';
 import '../App.css';
+import Footer from './Footer';
 
 const ProjectsPage: React.FC = () => {
     const openInNewTab = (url: string) => {
@@ -42,6 +43,7 @@ const ProjectsPage: React.FC = () => {
                     </div>
                 </div>
             </div>
+<Footer/>
         </>
     );
 };
