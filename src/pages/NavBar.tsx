@@ -1,45 +1,27 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const NavBar = () => {
   const navigate = useNavigate();
-  const portfolioStyle = {
-    fontSize: '24px', 
-  };
-
-  const buttonStyle = {
-    margin: '0 10px',
-  };
-
-  const handleHobbies = () => {
-    navigate('/hobbies');
-  };
-
-  const handleProjects = () => {
-    navigate('/projects');
-  };
-
-  const handleHome = () => {
-    navigate('/');
-  };
-
-  const handleAboutMe = () => {
-    navigate('/aboutme');
-  };
+  const location = useLocation(); // to determine the current route
+  const isActive = (path: string) => location.pathname === path;
+ 
 
   return (
-    <nav className="navbar" style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <nav className="navbar">
+      <h1 className="portfolio-title" onClick={() => navigate('/')}>
+        Ryan Shaw's Portfolio
+      </h1>
       <div>
-        <h1>
-          <button className="nav-button" onClick={handleHome} style={portfolioStyle}>
-            Ryan Shaw's Portfolio
-          </button>
-        </h1>
-      </div>
-      <div>
-        <button className="nav-button" onClick={handleAboutMe} style={buttonStyle}>About Me</button>
-        <button className="nav-button" onClick={handleHobbies} style={buttonStyle}>Hobbies</button>
-        <button className="nav-button" onClick={handleProjects} style={buttonStyle}>Projects</button>
+        <button className={`nav-button ${isActive('/aboutme') ? 'active-link' : ''}`} onClick={() => navigate('/aboutme')}>
+          About Me
+        </button>
+        <button className={`nav-button ${isActive('/hobbies') ? 'active-link' : ''}`} onClick={() => navigate('/hobbies')}>
+          Hobbies
+        </button>
+        <button className={`nav-button ${isActive('/projects') ? 'active-link' : ''}`} onClick={() => navigate('/projects')}>
+          Projects
+        </button>
       </div>
     </nav>
   );

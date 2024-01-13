@@ -6,10 +6,8 @@ const AboutMe: React.FC = () => {
     return (
         <>
         <NavBar />
-        <div style={{ textAlign: 'center' }}>
-            <h1>Ryan Shaw</h1>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      
+        <div className="home-page" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{ marginRight: '50px' }}>
                 <img src={GraduationImage} alt="Ryan Shaw" style={{ width: '500px', height: 'auto' }} />
             </div>

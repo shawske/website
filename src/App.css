@@ -1,5 +1,22 @@
+/* Include Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Reset some styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* App styles */
 .App {
   text-align: center;
+  background-color: #1a1a1a; /* Dark background */
+  color: #f0f0f0; /* Light text */
 }
 
 .App-logo {
@@ -36,8 +53,104 @@
     transform: rotate(360deg);
   }
 }
-
+/* Home page styles */
 .home-page {
-  background-color: black; /* Set the background color to black */
-  color: white; /* Set the text color to white */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem; /* Larger font size for main headings */
+}
+
+h4 {
+  font-weight: 300;
+  color: #cccccc;
+}
+/* Navigation styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1a1a1a; /* Dark background */
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: #f0f0f0; /* Light text */
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-button:hover {
+  color: #ffc107; /* Highlight color on hover */
+}
+
+.portfolio-title {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Indicates the active page */
+.active-link {
+  color: #ffc107; /* Highlight color for the active link */
+}
+
+/* Hide the outline that appears when the button is clicked */
+.nav-button:focus {
+  outline: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-button {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+/* Button styles */
+.button-style {
+  background-color: #ffc107; /* Highlight color */
+  color: #1a1a1a; /* Dark text */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+.button-style:hover {
+  background-color: #e0a106; /* Darker shade on hover */
+}
+
+.button-style:focus {
+  outline: none;
+}
+
+/* Add icon fonts (e.g., Font Awesome) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
