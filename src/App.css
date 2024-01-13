@@ -58,7 +58,7 @@ body, button {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Reduced from 100vh to 80vh */
+  min-height: 91vh; /* Reduced from 100vh to 80vh */
   flex-direction: row; /* Changed to row for side-by-side layout */
   background-color: #1a1a1a;
   margin-top: -70px; /* Optionally, adjust this value as needed */
@@ -190,4 +190,26 @@ p {
   border: none;
   border-radius: 5px;
   cursor: not-allowed;
+}
+
+/* Footer.css */
+.footer {
+  /* Add your styles here */
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #fff;
+
+  /* Other styling as needed */
+}
+
+.footer-link {
+  /* Styling for footer links */
+  margin: 0 10px;
+  color: #fff;
+  display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+  /* Other styling as needed */
 }

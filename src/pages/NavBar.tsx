@@ -24,12 +24,6 @@ const NavBar = () => {
         <button className={`nav-button ${isActive('/projects') ? 'active-link' : ''}`} onClick={() => navigate('/projects')}>
           Projects
         </button>
-        <a href="https://www.facebook.com/ryan.shaw.52687" target="_blank" rel="noopener noreferrer" className="nav-button">
-                <FontAwesomeIcon icon={faFacebook} /> Facebook
-            </a>
-            <a href="https://www.linkedin.com/in/ryan-shaw-39220223b/" target="_blank" rel="noopener noreferrer" className="nav-button">
-                <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-            </a>
       </div>
     </nav>
   );

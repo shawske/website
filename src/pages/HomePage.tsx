@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 import asdf from '../photos/asdf.jpg';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
+import Footer from './Footer';
 
 const HomePage: React.FC = () => {
     const navigate = useNavigate();
@@ -28,6 +29,7 @@ const HomePage: React.FC = () => {
                     </button>
                 </div>
             </div>
+            <Footer />
         </>
     );
 };
