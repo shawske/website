@@ -10,9 +10,9 @@ const NavBar = () => {
   };
   return (
     <nav className="navbar">
-      <button className="nav-button" onClick={handleLogout}>Home</button>
-      <h1 className="nav-title">Conference Paper Review System</h1>
-      <button className="nav-button" onClick={handleLogout}>Logout</button>
+      <button className="nav-button" onClick={handleLogout}>Hobbys</button>
+      <h1 className="nav-title">Ryan Shaw's Portfolio</h1>
+      <button className="nav-button" onClick={handleLogout}>Projects</button>
     </nav>
   );
 };
