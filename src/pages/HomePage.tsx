@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
                             <h4>Languages</h4>
                             <p>Proficient in C++, JavaScript, Kotlin, Python, SQL, and Java, I craft dynamic solutions for both client and server sides.</p>
                             <h4>Frameworks & Platforms</h4>
-                            <p>Experienced with Node.js for server-side development, Spring Boot for enterprise-level applications, and Firebase for real-time databases and authentication services.</p>
+                            <p>Experienced with Node.js for server-side development, React for front-end development, Spring Boot for enterprise-level applications, and Firebase for real-time databases and authentication services.</p>
                         <h4>Development Tools</h4>
                         <p>Versed in Eclipse, Visual Studio (VS) and Visual Studio Code (VSCode), Atom for coding; GitHub for version control; and Postman for API development and testing.</p>
                         </section>
