@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom';
 const NavBar = () => {
   const navigate = useNavigate();
   const portfolioStyle = {
-    fontSize: '24px', // Adjust the size as needed
+    fontSize: '24px', 
   };
 
   const buttonStyle = {
-    margin: '0 10px', // Adjust the margin as needed
+    margin: '0 10px',
   };
 
   const handleHobbies = () => {
@@ -37,9 +37,9 @@ const NavBar = () => {
         </h1>
       </div>
       <div>
+        <button className="nav-button" onClick={handleAboutMe} style={buttonStyle}>About Me</button>
         <button className="nav-button" onClick={handleHobbies} style={buttonStyle}>Hobbies</button>
         <button className="nav-button" onClick={handleProjects} style={buttonStyle}>Projects</button>
-        <button className="nav-button" onClick={handleAboutMe} style={buttonStyle}>About Me</button>
       </div>
     </nav>
   );
