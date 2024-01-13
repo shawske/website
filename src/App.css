@@ -163,3 +163,31 @@ p {
 
 /* Add icon fonts (e.g., Font Awesome) */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+.project-card {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #8a8989;
+  text-align: center;
+}
+
+.project-button {
+  background-color: #ccc;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.disabled-button {
+  background-color: #ccc;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
