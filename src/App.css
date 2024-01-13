@@ -58,22 +58,31 @@ body, button {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  flex-direction: column;
+  min-height: 100vh; /* Reduced from 100vh to 80vh */
+  flex-direction: row; /* Changed to row for side-by-side layout */
+  background-color: #1a1a1a;
+  margin-top: -70px; /* Optionally, adjust this value as needed */
 }
 
 h1, h2, h3, h4 {
   font-weight: 700;
   margin-bottom: 20px;
+  color:#cccccc
 }
 
 h1 {
   font-size: 3rem; /* Larger font size for main headings */
+  color:#fff
 }
 
 h4 {
   font-weight: 300;
   color: #cccccc;
+}
+
+p {
+  font-weight: 30;
+  color: #8a8989;
 }
 /* Navigation styles */
 .navbar {

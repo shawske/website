@@ -11,14 +11,14 @@ const HomePage: React.FC = () => {
         navigate('/aboutme');
     };
 
+    
+
     return (
         <>
             <NavBar />
-            <div className="home-page">
-                <div>
-                    <img src={asdf} alt="Ryan Shaw" style={{ width: '300px', height: 'auto', borderRadius: '50%' }} />
-                </div>
-                <div>
+            <div className="home-page" style={{ display: 'flex', flexDirection: 'row' }}>
+                <img src={asdf} alt="Ryan Shaw" style={{ width: '500px', height: 'auto', borderRadius: '10%'}} />
+                <div style={{ marginLeft: '20px' }}>
                     <h1>Hello,</h1>
                     <h1>I'm Ryan</h1>
                     <h2>Software Engineer</h2>                       
