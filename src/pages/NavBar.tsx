@@ -10,7 +10,7 @@ const NavBar = () => {
   };
   return (
     <nav className="navbar">
-      <button className="nav-button" onClick={handleLogout}>Hobbys</button>
+      <button className="nav-button" onClick={handleLogout}>Hobbies</button>
       <h1 className="nav-title">Ryan Shaw's Portfolio</h1>
       <button className="nav-button" onClick={handleLogout}>Projects</button>
     </nav>
