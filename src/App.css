@@ -166,12 +166,17 @@ p {
 
 .project-card {
   width: 200px;
+  height: auto; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This will push the button to the bottom */
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
   background-color: #1a1a1a;
   color: #8a8989;
   text-align: center;
+  margin-bottom: 20px; /* Optional, for spacing between cards when they wrap */
 }
 
 .project-button {
