@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "typescipt": "^1.0.0"
+    "typescipt": "^1.0.0",
+    "vanta": "^0.5.24"
   }
 }

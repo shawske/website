@@ -39,6 +39,10 @@ body, button {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  min-height: 100vh; /* or set to the desired height */
+  position: relative; /* If you want content over the background */
+  overflow: hidden; /* To contain the waves effect within this element */
+
 }
 
 .App-link {
@@ -220,4 +224,11 @@ p {
     gap: 5px;
 
   /* Other styling as needed */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh; /* Ensure full viewport height */
+  margin: 0;
+  overflow: hidden; /* Optional: to prevent scrolling if the effect covers entire viewport */
 }
